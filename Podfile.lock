@@ -1,0 +1,23 @@
+PODS:
+  - Alamofire (5.6.1)
+  - ApiRouter (1.0.5):
+    - Alamofire (~> 5)
+
+DEPENDENCIES:
+  - ApiRouter (from `ios-apiRouter-main`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+
+EXTERNAL SOURCES:
+  ApiRouter:
+    :path: ios-apiRouter-main
+
+SPEC CHECKSUMS:
+  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  ApiRouter: 303c6b844ac11e523afe8194d299a6889bcd49f1
+
+PODFILE CHECKSUM: 7ca83a4e02bf00ccef401dc7db4f5365d35ceb6a
+
+COCOAPODS: 1.11.2
