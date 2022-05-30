@@ -4,7 +4,7 @@ PODS:
     - Alamofire (~> 5)
 
 DEPENDENCIES:
-  - ApiRouter (from `ios-apiRouter-main`)
+  - ApiRouter (from `https://github.com/prismamedia/ios-apiRouter`, tag `1.0.5`)
 
 SPEC REPOS:
   trunk:
@@ -12,12 +12,18 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   ApiRouter:
-    :path: ios-apiRouter-main
+    :git: https://github.com/prismamedia/ios-apiRouter
+    :tag: 1.0.5
+
+CHECKOUT OPTIONS:
+  ApiRouter:
+    :git: https://github.com/prismamedia/ios-apiRouter
+    :tag: 1.0.5
 
 SPEC CHECKSUMS:
   Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
   ApiRouter: 303c6b844ac11e523afe8194d299a6889bcd49f1
 
-PODFILE CHECKSUM: 7ca83a4e02bf00ccef401dc7db4f5365d35ceb6a
+PODFILE CHECKSUM: 5a9a25f6faa5090b50a81ad6ff00bf63554f8a96
 
 COCOAPODS: 1.11.2

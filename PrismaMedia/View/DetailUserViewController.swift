@@ -53,5 +53,7 @@ class DetailUserViewController: UIViewController {
             name: .submitButton,
             object: nil,
             userInfo: [Notification.Name.submitButton: viewModel.user, "index": index])
+
+        navigationController?.popViewController(animated: true)
     }
 }

@@ -6,20 +6,20 @@
 //
 
 import Foundation
+import ApiRouter
 import Alamofire
 
 class Fetcher {
     static func getUsers (url: URL, completion: @escaping (APIModel) -> ()) {
-        URLSession.shared.dataTask(with: url) { data, response, error in
-            guard let data = data else { return }
 
-            do {
-                let users = try JSONDecoder().decode(APIModel.self, from: data)
-                completion(users)
-            } catch let error {
-                print(error.localizedDescription)
+        ApiRouter.Users.list.call { (result: Result<APIModel, Error>) in
+            switch result {
+                case .success(let success):
+                    completion(success)
+                case .failure(let failure):
+                    print("case failure", failure.localizedDescription)
             }
-        }.resume()
+        }
     }
 
     static func loadAvatarData (url: URL, completion: @escaping (Data) -> ()) {

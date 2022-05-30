@@ -2,9 +2,8 @@
 # platform :ios, '9.0'
 
 target 'PrismaMedia' do
-  # Pods for PrismaMedia
-  #pod "ApiRouter", :git => 'https://github.com/prismamedia/ApiRouter.podspec', :tag => '1.0.5'
-  pod 'ApiRouter', :path => 'ios-apiRouter-main'
+
+  pod "ApiRouter", :git => 'https://github.com/prismamedia/ios-apiRouter', :tag => '1.0.5'
 
 end
 
